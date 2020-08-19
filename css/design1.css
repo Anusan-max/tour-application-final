@@ -3,43 +3,28 @@
 body {
     text-align: center;
   }
-  
+.responsive{
+width:100%;
+height: auto;
+}
+
 img {
     display: block;
     width: 100%;
     height: auto;
   }
+
   
-  h1,
-  h2,
-  h3 {
-    margin: 0;
-    padding: 1em 0;
-  }
+  h1{
+    text-align: center;
+    font-size: 40px;
+}
   
   p {
     margin: 0;
     padding: 1em 0;
-  }  
+  } 
 
-  .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.istockphoto.com/photos/guide-explaining-to-tourists-the-coliseum-of-rome-picture-id485614909?k=6&m=485614909&s=612x612&w=0&h=mXuW3Q3kIgYlNXtvWhvblOa1uxDQypcmSHwRFUUA4to=");
-    height: 90%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(255, 255, 255);
-  }
-  
   /* Section A */
   
   #section-a {
@@ -88,8 +73,6 @@ img {
     background: #2690d4;
   }
   
-
-  
   /* Media Queries */
   
   @media (min-width: 700px) {
@@ -126,4 +109,4 @@ img {
       width: 31%;
     }
   }
-  
+ 

@@ -1,35 +1,105 @@
-<!DOCTYPE html>
+
+<html lang="en">
 <link href="http://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/transport.css">
 <meta name="viewport" content="width=device-width">
 
 <head>
-  
+  <title>transport page</title>
 </head>
 
 <header class="header">
     <div id='nav'></div>
 </header>
-<body></body>
+<body><div class="container">
+  <h1 class="brand"><span>SRI</span> Transport</h1>
+  <div class="wrapper">
+    <div class="company-info">
+      <h3>Some</h3>
+      <ul>
+        <li><i class="fa fa-road"></i> 44 Something st</li>
+        <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+        <li><i class="fa fa-envelope"></i> test@acme.test</li>
+      </ul>
+    </div>
+    <div class="contact">
+      <form onsubmit="event.preventDefault()">
+        <p>
+          <label>Name</label>
+          <input type="name" name="name" id="name">
+        </p>
+        <p>
+          <label>Taxi From</label>
+          <select name="cars" id="cars">
+            <option value="tuk-tuk">TukTuk</option>
+            <option value="mini-car">MiniCar</option>
+            <option value="luxury-car">LuxuryCar</option>
+            <option value="luxury-van">LuxuryVan</option>
+            <option value="luxury-bus">LuxuryBus</option>
+          </select>
+        </p>
+        <p>
+          <label>Fuel efficiency:</label>
+          <select name="Fuel" id="fuel">
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+            <option value="Low">Low</option>
+          </select>
+        </p>
+        <p>
+          <label>Distance</label>
+          <input type="distance" name="distance" id="distance">
+        </p>
+        <p>
+          <label>Stay</label>
+          <select name="stay" id="stay">
+            <option value="oneway">One way</option>
+            <option value="twoway">Two way</option>
+            <option value="overnight">over night</option>
+          </select>
+        </p>
+        <p>
+          <label>Starting point</label>
+          <input type="text" name="point" id="point">
+        </p>
 
-<section class="ft-main">
-    <div class="ft-main-item">
-      <h2 class="ft-title">Name</h2>
-      <p>Kailainathan Anusan</p>
+        <p>
+          <button onclick="addToCart()">Add to Cart</button>
+        </p>
+        <p>
+          <button onclick="calculateTotal()">reserve</button>
+        </p>
+        <p>
+          <button onclick="saveFavourite()">save favourite</button>
+        </p>
+        <p>
+          <button onclick="orderFavourite()">order favourite</button>
+        </p>
+      </form>
     </div>
-    <div class="ft-main-item">
-      <h2 class="ft-title">Phone Number</h2>
-      <p>0774219525</p>
-    </div>
-    <div class="ft-main-item">
-      <h2 class="ft-title">Address</h2>
-      <p>37/56 walls lane, Colombo-15</p>
-    </div>
-    <div class="ft-main-item">
-      <h2 class="ft-title">Email</h2>
-      <p>kailaianu21@gmail.com</p>
-    </div>
-  </section>
+  </div>
+</div><section class="ft-main">
+  <div class="ft-main-item">
+    <h2 class="ft-title">Name</h2>
+    <p>Kailainathan Anusan</p>
+  </div>
+  <div class="ft-main-item">
+    <h2 class="ft-title">Phone Number</h2>
+    <p>0774219525</p>
+  </div>
+  <div class="ft-main-item">
+    <h2 class="ft-title">Address</h2>
+    <p>37/56 walls lane, Colombo-15</p>
+  </div>
+  <div class="ft-main-item">
+    <h2 class="ft-title">Email</h2>
+    <p>kailaianu21@gmail.com</p>
+  </div>
+</section>
+</body>
+
+
 <script src="js/nav.js"></script>
 </html>
