@@ -66,6 +66,7 @@ a {
     color: #222;
     background: lightcoral
   }
+  
   @media screen and (max-width: 600px){
     
     .parent {

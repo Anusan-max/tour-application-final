@@ -7,9 +7,7 @@ const staticAssets = [
   'transport.html',
   'design1.html',
   'design2.html',
-  'contactus.html',
-
-
+  'contactus.html'
 ];
 
 self.addEventListener('install', async e => {
