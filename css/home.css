@@ -31,6 +31,21 @@ a {
     margin-top: 15px;
   }
   
+  .section_bg_img1 {
+    background: url(https://images.unsplash.com/photo-1580889272861-dc2dbea5468d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) center center no-repeat !important;
+     background-size: cover !important;
+  }
+  .section_bg_img2 {
+    background: url(https://bestofceylon.com/images/galle/boat-trip-in-madu-river/boat-trip-in-madu-river1.jpg) center center no-repeat !important;
+     background-size: cover !important;
+  }
+
+  .section_bg_img3 {
+    background: url(https://cinnamonweb.blob.core.windows.net/cinnamonweb-prd/group_stay/STAY-GROUP-CHBL-Superior-Room-715x565.jpg) center center no-repeat !important;
+     background-size: cover !important;
+  }
+  
+  
   .item {
     width: 50%;
     padding: 2em;

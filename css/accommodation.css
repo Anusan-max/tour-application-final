@@ -24,10 +24,6 @@
 }
 
 /** css Links **/
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-body{
-    font-family: 'Roboto', sans-serif;
-}
 h1{
     text-align: center;
     color: #4181ee;
@@ -65,7 +61,6 @@ h1{
     line-height: 1.5;
 }
 .card-btn{
-    all: unset;
     display: block;
     margin-left: auto;
     border: 2px solid #FFF;
