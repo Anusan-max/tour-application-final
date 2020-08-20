@@ -12,21 +12,23 @@
 <header class="header">
     <div id='nav'></div>
 </header>
-<body><div class="container">
-  <h1 class="brand"><span>Sri Lanka Tourism</h1>
+<body> <div class="container">
+  <h1 class="brand" id="orderThanksMessage">Welcome to Order Taxi</h1>
   <div class="wrapper">
     <div class="company-info">
-      <h3>Sri Lanka Tourism</h3>
+      <h3>Total taxis : <span id="taxiNo"></span></h3>
+      <h5>Prices are in LKR</span></h5>
       <ul>
-        <li><i class="fa fa-phone"></i> 0774219525</li>
-        <li><i class="fa fa-envelope"></i> kailaianu21@gmail.com</li>
+        <li>Current Order :<span id="currentOrder">0</span> </li>
+        <li>Total Order:  <span id="totalOrder">0</li>
+        <li>Loyality Points: <span id="loyalityPoints">0</li>
       </ul>
     </div>
     <div class="contact">
-      <form onsubmit="event.preventDefault()">
+      <form onsubmit="return submitForm(this)">
         <p>
           <label>Name</label>
-          <input type="name" name="name" id="name">
+          <input type="name" name="name" id="name" pattern="[A-Za-z]{1,15}" required>
         </p>
         <p>
           <label>Taxi From</label>
@@ -48,7 +50,7 @@
         </p>
         <p>
           <label>Distance</label>
-          <input type="distance" name="distance" id="distance">
+          <input type="number" name="distance" id="distance"  min="1" max="2000" required>
         </p>
         <p>
           <label>Stay</label>
@@ -60,21 +62,25 @@
         </p>
         <p>
           <label>Starting point</label>
-          <input type="text" name="point" id="point">
+          <input type="text" name="point" id="pointId" pattern="[A-Za-z]{1,15}" required>
         </p>
 
         <p>
-          <button onclick="addToCart()">Add to Cart</button>
+          <button type="submit" id="addToCartId" value="addtoCart" onclick="setSubmit(this)">Add to Cart</button>
         </p>
         <p>
-          <button onclick="calculateTotal()">reserve</button>
+          <button type="submit" id="reserve" value="reserve" onclick="setSubmit(this)">reserve</button>
         </p>
         <p>
-          <button onclick="saveFavourite()">save favourite</button>
+          <button type="submit" id="saveFavourite" value="saveFavourite" onclick="setSubmit(this)">save favourite</button>
         </p>
         <p>
-          <button onclick="orderFavourite()">order favourite</button>
+          <button type="submit" id="orderFavourite" value="orderFavourite" onclick="setSubmit(this)">order favourite</button>
         </p>
+        <p>
+          <button type="submit" id="Loyality" value="Loyality" onclick="setSubmit(this)">Loyality points</button>
+        </p>
+      </form>
       </form>
     </div>
   </div>
@@ -97,5 +103,6 @@
   </div>
 </section>
 <script src="js/nav.js"></script>
+<script src="js/taxi-order.js"></script>
 </body>
 </html>
